@@ -1,0 +1,166 @@
+# ================================================
+# config.yaml
+# ================================================
+
+app:
+  package: "com.zhiliaoapp.musically.go"
+  activity: "com.ss.android.ugc.aweme.splash.SplashActivity"
+
+device:
+  udid: null
+  platform_version: null
+
+appium:
+  server_url: "http://127.0.0.1:4723"
+  automation_name: "UiAutomator2"
+  new_command_timeout: 300
+
+files:
+  accounts: "abc/accounts.txt"
+  bios: "abc/bios.txt"
+
+safe_popup_dismiss_tap:
+  x: 540
+  y: 200
+
+human_delay:
+  min_sec: 0.4
+  max_sec: 1.8
+  after_action_min: 0.8
+  after_action_max: 2.2
+
+dob:
+  # Reference only
+  target_day: 5
+  target_month: "April"
+  target_year: 2005
+
+  # Randomized swipe counts (robust & anti-detection)
+  day_swipes:
+    min: 1
+    max: 3
+  month_swipes:
+    min: 1
+    max: 3
+  year_swipes:
+    min: 10
+    max: 15
+    # NOTE: Year ALWAYS uses downward swipes (as per your latest instruction)
+
+follow_settings:
+  people_to_follow: 8
+  follow_delay_min: 1.2
+  follow_delay_max: 2.8
+
+profile_pictures:
+  start_index: 0
+
+# All locators (unchanged)
+locators:
+  target_user_to_search: "user2133230125010"
+
+  use_phone_or_email:
+    type: "text"
+    value: "Use phone or email"
+
+  email_option:
+    type: "text"
+    value: "Email"
+
+  email_field:
+    type: "resource-id"
+    value: "com.zhiliaoapp.musically.go:id/f1n"
+
+  checkbox_get_updates:
+    type: "resource-id"
+    value: "com.zhiliaoapp.musically.go:id/enl"
+
+  next_button:
+    type: "resource-id"
+    value: "com.zhiliaoapp.musically.go:id/f9y"
+
+  password_field:
+    type: "resource-id"
+    value: "com.zhiliaoapp.musically.go:id/f1n"
+
+  dob_day_picker:
+    type: "resource-id"
+    value: "com.zhiliaoapp.musically.go:id/eho"
+
+  dob_month_picker:
+    type: "resource-id"
+    value: "com.zhiliaoapp.musically.go:id/fch"
+
+  dob_year_picker:
+    type: "resource-id"
+    value: "com.zhiliaoapp.musically.go:id/gnn"
+
+  profile_name_field:
+    type: "text"
+    value: "Add your profile name"
+
+  create_button:
+    type: "text"
+    value: "Create"
+
+  profile_icon:
+    type: "resource-id"
+    value: "com.zhiliaoapp.musically.go:id/f3m"
+
+  select_from_gallery:
+    type: "text"
+    value: "Select from Gallery"
+
+  gallery_images_container:
+    type: "xpath"
+    value: "//android.widget.RecyclerView/android.widget.FrameLayout"
+
+  save_picture_button:
+    type: "text"
+    value: "Save"
+
+  username_field_container:
+    type: "xpath"
+    value: "//android.widget.ScrollView//android.widget.EditText"
+
+  save_username_button:
+    type: "xpath"
+    value: "//android.widget.ScrollView/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.view.ViewGroup[2]"
+
+  set_username_dialog_button:
+    type: "text"
+    value: "Set username"
+
+  add_bio_button:
+    type: "resource-id"
+    value: "com.zhiliaoapp.musically.go:id/gez"
+
+  bio_field:
+    type: "text"
+    value: "Describe yourself"
+
+  save_bio_button:
+    type: "xpath"
+    value: "//android.widget.FrameLayout[@resource-id='com.zhiliaoapp.musically.go:id/dyy']//android.view.ViewGroup[1]"
+
+  home_tab:
+    type: "text"
+    value: "Home"
+
+  search_icon:
+    type: "xpath"
+    value: "//android.widget.FrameLayout[@resource-id='com.zhiliaoapp.musically.go:id/gbu']//android.widget.ImageView[1]"
+
+  search_bar:
+    type: "text"
+    value: "Search"
+
+  target_user_to_search: "user2133230125010"
+
+  following_tab:
+    type: "resource-id"
+    value: "com.zhiliaoapp.musically.go:id/geh"
+
+  follow_button_in_list:
+    type: "text"
+    value: "Follow"
