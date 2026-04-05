@@ -1,0 +1,4 @@
+gmail1script@gmail.com
+PassWord1.
+gmail2script@gmail.com
+PassWord2.
