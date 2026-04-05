@@ -111,7 +111,12 @@ def main():
         driver.press_keycode(66)  # Enter
         human_delay(cfg, "after_action_min", "after_action_max")
 
-        user_locator = {"type": "xpath", "value": "//android.view.ViewGroup[@content-desc='user2133230125010']//android.view.ViewGroup[1]"}
+        target_user = cfg["locators"]["target_user_to_search"]
+
+        user_locator = {
+            "type": "xpath",
+            "value": f"//android.view.ViewGroup[@content-desc='{target_user}']//android.view.ViewGroup[1]"
+        }
         wait_and_click(driver, user_locator)
 
         wait_and_click(driver, cfg["locators"]["following_tab"])
